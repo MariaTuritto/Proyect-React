@@ -1,0 +1,363 @@
+/* NavBar */
+
+.nav {
+  background-color: rgb(224, 220, 220);
+  color: black;
+  height: 7rem;
+}
+
+.titleNav {
+  font-family: 'Oleo Script', cursive;
+  font-size: 2rem;
+  margin: 0 1.5rem;
+}
+
+.buttonSearch {
+  border-color: #bd881ff5;
+
+}
+
+.imgLogo {
+  border-radius: 50%;
+  max-width: 100px;
+}
+
+.imgLogo:hover {
+  max-width: 110px;
+}
+
+.buttonSecond {
+  border-color: #bd881ff5;
+  color: black;
+}
+
+.buttonSecond:hover {
+  background-color: #bd881ff5;
+  color: #fff;
+}
+.navItems{
+  margin-left: 100px;
+  padding: 20px;
+}
+.NavLink {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.1rem;
+  display: flex;
+  gap: 15px;
+}
+
+.NavItem {
+  border-color: #1f1300;
+}
+
+.link {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #1f1f15;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 5px;
+
+}
+
+.link:hover {
+   color: #bd881ff5;
+}
+.dropdown {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.2rem;
+  color: #1f1f15;
+
+  
+}
+
+
+.cartW {
+  background-color: #bd881ff5;
+  border-radius: 5px;
+  margin: 0 5px;
+  height: auto;
+}
+
+.numberShop {
+  font-size: 15px;
+}
+
+/* Cards */
+
+.card-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: max-content 200px 3fr;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 12px 0 rgba (0, 0, 0, 0);
+  margin: 10px;
+  padding: 10px;
+  background-color: #eef7d2;
+  color: black;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+  transform: traslateY(-6px);
+}
+
+.cardDetail {
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContenedorCard {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+
+}
+
+
+
+.titleCard {
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: #302b27;
+}
+
+.textDetail{
+  margin: 10px;
+}
+
+
+/* Home page */
+
+.main {
+  height: 700px;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.mainImage {
+  background-image: url(../src/Images/fondohome.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1f1300;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.mainImage .imageText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mainImage .imageText--0 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 5.2rem;
+  color: #fff;
+  background-color: #1f1300;
+  border-radius: 8px;
+  padding: 20px;
+ 
+}
+
+.mainImage .imageText--1 {
+  background-color: #eef7d2;
+  border-color: #302b27;
+  border-radius: 8px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2.5rem;
+}
+
+.mainImage .imageText--2 {
+  background-color: #eef7d2;
+  border-color: #302b27;
+  border-radius: 8px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2rem;
+}
+
+.mainImage .imageText--3 {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+/* ItemListContainer */
+
+.conteinerItemList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.titleProducts {
+  font-size: 3rem;
+  font-family: 'Oleo Script', cursive;
+  background-color: #1f1300;
+  color: #eef7d2;
+  text-align: center;
+}
+.subTitles{
+  background-color: #1f1300;
+  font-size: 2rem;
+  font-family: 'Oleo Script', cursive;
+  color: #eef7d2;
+  text-align: center;
+}
+/* ITEM  */
+
+ h3{
+  font-size: 1.2rem;
+ }
+
+ /* ITEM COUNTER */
+.ItemCount{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ .counter {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 0px 30px 0px 10px;
+  border-radius: 10px;
+  margin: 10px 0px 10px 0px;
+}
+
+.buttonsCount{
+  display: flex;
+  align-items: center;
+}
+.counterButton{
+  background-color: #bd881ff5;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.buttonsCart{
+  display: flex;
+  
+}
+/* FOOTER */
+
+.footerContainer {
+  
+  align-items: center;
+  background-color: #bd881ff5;
+  display: flex;
+  justify-content: center;
+}
+
+/* ABOUT US */
+.aboutConteiner{
+  display: flex;
+  justify-content: center;
+}
+.imgAbout{
+
+  width: auto;
+  height: auto;
+}
+
+/* Form component */
+.FormButton{
+  background-color: #f9a806f5 ;
+ 
+  cursor: pointer;
+  border-color: #1f1300;
+ }
+ 
+ .FormButton:hover{
+   background-color: #f6e1b6f5;
+ 
+   border-color: #eef7d2;
+ }
+ 
+ .Spinner{
+   display: flex;
+   justify-content: center;
+ }
+
+ /* Brief */
+ .orderSection{
+  height: 500px;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+ }
+ .orderImage {
+  background-image: url(../src/Images/order.png);
+  background-size: cover;
+  background-color: #1f1300;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.orderId{
+  height: 100px;
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center; 
+}
+.orderImage2 {
+  background-image: url(../src/Images/comprar.png);
+  background-size: cover;
+  background-color: #1f1300;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orderBack{
+  background-color: #eef7d2;
+  border-color: #302b27;
+  border-radius: 8px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2rem;
+}
+
+.containerForm{
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titlesCards{
+  font-size: 1.2rem;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  margin: 3rem;
+}
