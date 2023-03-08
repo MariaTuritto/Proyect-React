@@ -42,7 +42,7 @@ const ItemCount = ({ price, id, title}) => {
            -
         </button >   
         <div>
-{/*  ONCLICK PARA ACTIVAR FUNCION onADD  */}
+
           <Button onClick={() => addToCart()} variant="outline-warning">
               Agregar al carrito : {counter}
           </Button>

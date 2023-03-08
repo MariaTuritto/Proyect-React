@@ -8,13 +8,10 @@ import { useCartContext } from "../Context/CartContext";
 
 export const ItemDetail = ({ products }) => {
   const { id } = useParams();
-  // const {addProduct} = useCartContext();
+ 
   const [product, setProduct] = useState([]);
 
-  // const onAdd = (quantity) => {
-  //   addProduct(products, quantity)
-
-  // };
+ 
 
   useEffect(() => {
     const db = getFirestore();
