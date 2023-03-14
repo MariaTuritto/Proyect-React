@@ -29,7 +29,7 @@ donde puedes ejecutar una compra y obtener un ID desde FIREBASE para tu comprar 
 ### ¿Cómo Funciona? :
 ---
 
-Video (Proyect.mp4)
+[Video Explicativo] (https://watch.screencastify.com/v/izQt3uEXfEBxz7kxnjbh)
 
 ---
-(orders.png)
+![Mi orden generada](orders.png)
