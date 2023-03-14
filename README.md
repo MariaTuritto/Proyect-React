@@ -32,4 +32,4 @@ donde puedes ejecutar una compra y obtener un ID desde FIREBASE para tu comprar 
 [Video Explicativo] (https://watch.screencastify.com/v/izQt3uEXfEBxz7kxnjbh)
 
 ---
-![Mi orden generada](orders.png)
+
