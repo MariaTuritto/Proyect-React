@@ -11,12 +11,16 @@ import { useCartContext } from "../Context/CartContext";
 import { Link } from "react-router-dom";
 
 const sendOrder = () => {
-  const { cartList, totalPrice } = useCartContext();
+  const { cartList } = useCartContext();
   const [orderId, setOrderId] = useState(null);
   const [userName, setUserName] = useState("");
   const [userPhone, setUserPhone] = useState("");
   const [userEmail, setUserEmail] = useState("");
 
+
+  
+
+    
   const order = {
     buyer: {
       userName,
@@ -24,19 +28,19 @@ const sendOrder = () => {
       userPhone,
     },
 
-    items: cartList.map((product) => ({
-      id: product.id,
-      title: product.title,
-      price: product.price,
-    })),
+ 
     date: serverTimestamp(),
-    total: totalPrice(),
+    
   };
 
+
   const handleSubmit = (e) => {
+
     const db = getFirestore();
     const ordersCollection = collection(db, "orders");
+
     e.preventDefault();
+
     if (userName === "" || userEmail === "" || userPhone === "") {
       alert("No debes dejar campos vacios");
     } else {
@@ -48,6 +52,8 @@ const sendOrder = () => {
     const letras = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     letras.includes(e.key) ? e.preventDefault() : console.log(e.key);
   };
+
+  
 
   return (
     <>
@@ -90,7 +96,9 @@ const sendOrder = () => {
             </Form.Text>
           </Form.Group>
           <div className="buttonsCart my-4">
-          <Button variant="outline-warning" type="submit">
+          <Button onClick={() => {
+            enviarData(cartList)
+          }} variant="outline-warning" type="submit">
             FINALIZAR COMPRA
           </Button>
           

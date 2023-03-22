@@ -28,8 +28,3 @@ donde puedes ejecutar una compra y obtener un ID desde FIREBASE para tu comprar 
 
 ### ¿Cómo Funciona? :
 ---
-
-Video (Proyect.mp4)
-
----
-(orders.png)

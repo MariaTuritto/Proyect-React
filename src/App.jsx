@@ -7,7 +7,7 @@ import AboutUs from './Components/AboutUs';
 import ItemDetailContainer from './Components/ItemDetailContainer';
 import Cart from './Components/Cart';
 import SendOrder from './Components/SendOrder';
-import Brief from './Components/Brief';
+import Brief from './Components/Brief'
 import Footer from './Components/Footer';
 import { CartContextProvider } from './Context/CartContext';
 
@@ -25,6 +25,7 @@ function App() {
       <Route exact path='/cart' element={<Cart/>}/>
       <Route exact path='/SendOrder' element={<SendOrder/>}/>
       <Route exact path='/Brief' element={<Brief/>}/>
+     
      </Routes>
      <Footer/>
     </BrowserRouter>

@@ -3,20 +3,24 @@ import Button from "react-bootstrap/Button";
 import { useCartContext } from "../Context/CartContext";
 import '../Style.css';
 
-const ItemCount = ({ price, id, title}) => {
+const ItemCount = ({stock, price, id, title}) => {
 
     const {cartList, setCartList} = useCartContext();
 
     const [counter, setCounter] = useState(0);
-  
-    const decrease = () => {
-      setCounter((counter) => Math.max(counter - 1, 0));
-    };
-  
+
     const increase = () => {
-      setCounter(counter + 1);
+      if(counter < stock) {
+        setCounter(counter + 1);
+      }
     };
-    
+
+    const decrease = () => {
+      if (counter > 0) 
+        setCounter(counter - 1);
+    }
+  
+      
     // funcionalidad para agregar un producto al carrito
     const addToCart = () => {
       setCartList((currItems) => {
@@ -38,19 +42,25 @@ const ItemCount = ({ price, id, title}) => {
     return (
     
       <div className="buttonsCount" >
-         <button className="counterButton" onClick={decrease} key={counter}  >
+        { counter === 0 ? (<button className="counterButton" onClick={decrease}  >
            -
-        </button >   
+        </button > ) : (<button className="counterButton" onClick={decrease}  >
+           -
+        </button > )}
+           
         <div>
 
           <Button onClick={() => addToCart()} variant="outline-warning">
               Agregar al carrito : {counter}
           </Button>
         </div>
+        { counter === stock ? (<button className="counterButton" onClick={increase}  >
+           +
+        </button > ) : (<button className="counterButton" onClick={increase}  >
+           +
+        </button > )}
 
-         <button className="counterButton" key={counter >=1 } onClick={increase}>
-          +
-        </button> 
+         
       </div>
       
       
