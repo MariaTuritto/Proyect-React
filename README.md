@@ -27,12 +27,8 @@ donde puedes ejecutar una compra y obtener un ID desde FIREBASE para tu comprar 
 ---
 
 ### ¿Cómo Funciona? :
+![GIF] (Proyect-React.gif)
 ---
-<<<<<<< HEAD
-=======
+![ITEMS](src/Images/senditems.png)
 
-[Video Explicativo] (https://watch.screencastify.com/v/izQt3uEXfEBxz7kxnjbh)
-
----
-
->>>>>>> 6fedaa8319e67373af69b11b38d663447e61abc3
+![ORDERS](src/Images/sendorder.png)
