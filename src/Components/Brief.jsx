@@ -1,10 +1,13 @@
-import { useCartContext } from "../Context/CartContext";
+
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import "../Style.css";
+import { useState } from "react";
 
 const Brief = () => {
-  const { orderId } = useCartContext();
+
+  const [orderId, setOrderId] = useState(null)
+ 
 
   return (
     <>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { addDoc, getFirestore, collection } from "firebase/firestore";
 import { useCartContext } from "../Context/CartContext";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
@@ -6,8 +7,14 @@ import "../Style.css";
 
 const Cart = () => {
 
-  const { cartList, removeList , deleteItem, totalPrice} = useCartContext();
+  const { cartList, removeList ,deleteItem, totalPrice} = useCartContext();
 
+ 
+  const handledClick = () => {
+  const db = getFirestore();
+  const ordersCollection = collection(db, "orders");
+  addDoc(ordersCollection, order).then(({ id }) => setOrderId(id));
+};
 
   // Condicional para mostrar mensaje NO ITEMS si aun no has agregado Items al Cart
 
