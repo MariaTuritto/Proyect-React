@@ -7,13 +7,24 @@ import "../Style.css";
 
 const Cart = () => {
 
-  const { cartList, removeList ,deleteItem, totalPrice} = useCartContext();
+  const { cartList, deleteItem, totalPrice} = useCartContext();
+
+  const items = {
+    items: cartList.map((product) => ({
+      id: product.id,
+      title: product.title,
+      price: product.price,
+      
+    })),
+    total: totalPrice(),
+ 
+  }
 
  
   const handledClick = () => {
   const db = getFirestore();
-  const ordersCollection = collection(db, "orders");
-  addDoc(ordersCollection, order).then(({ id }) => setOrderId(id));
+  const ordersCollection = collection(db, "items");
+  addDoc(ordersCollection, items ).then(({ id }) => setOrderId(id));
 };
 
   // Condicional para mostrar mensaje NO ITEMS si aun no has agregado Items al Cart
@@ -73,7 +84,7 @@ const Cart = () => {
               <Link  to={"/SendOrder"}>
              
               <span className="link">
-              <Button variant="warning" onClick={() => removeList()}>
+              <Button variant="warning" onClick={handledClick}>
             Confirmar Compra
             </Button>
             </span>

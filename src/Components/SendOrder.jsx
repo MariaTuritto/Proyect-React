@@ -11,7 +11,7 @@ import { useCartContext } from "../Context/CartContext";
 import { Link } from "react-router-dom";
 
 const sendOrder = () => {
-  const { cartList , totalPrice} = useCartContext();
+  const { removeList } = useCartContext();
   const [orderId, setOrderId] = useState(null);
   const [userName, setUserName] = useState("");
   const [userPhone, setUserPhone] = useState("");
@@ -27,14 +27,7 @@ const sendOrder = () => {
       userEmail,
       userPhone,
     },
-    items: cartList.map((product) => ({
-      id: product.id,
-      title: product.title,
-      price: product.price,
-      quantity: product.quantity,
-    })),
-    total: totalPrice(),
- 
+    
     date: serverTimestamp(),
     
   };
@@ -102,7 +95,7 @@ const sendOrder = () => {
             </Form.Text>
           </Form.Group>
           <div className="buttonsCart my-4">
-          <Button onClick={handleSubmit} variant="outline-warning" type="submit">
+          <Button onClick={() => removeList()} variant="outline-warning" type="submit">
             FINALIZAR COMPRA
           </Button>
           
