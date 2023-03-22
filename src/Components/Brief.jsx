@@ -16,7 +16,7 @@ const Brief = () => {
             <strong>{orderId}</strong>{" "}
           </h2>
           <Link className="link" to={"/"}>
-            <Button className="counterButton">
+            <Button variant="outline-warning" className="counterButton">
               Volver al Inicio
             </Button>
           </Link>

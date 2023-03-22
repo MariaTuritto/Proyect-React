@@ -28,3 +28,11 @@ donde puedes ejecutar una compra y obtener un ID desde FIREBASE para tu comprar 
 
 ### ¿Cómo Funciona? :
 ---
+<<<<<<< HEAD
+=======
+
+[Video Explicativo] (https://watch.screencastify.com/v/izQt3uEXfEBxz7kxnjbh)
+
+---
+
+>>>>>>> 6fedaa8319e67373af69b11b38d663447e61abc3
