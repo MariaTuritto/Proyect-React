@@ -27,7 +27,9 @@ donde puedes ejecutar una compra y obtener un ID desde FIREBASE para tu comprar 
 ---
 
 ### ¿Cómo Funciona? :
-<p><img alt='git' src='https://github.com/MariaTuritto/Proyect-React/blob/main/Proyect-React.gif' width='700' height='420'></p>
+
+<p><img alt='git' src='https://github.com/MariaTuritto/Proyect-React/blob/main/react-gif.gif' width='700' height='420'></p>
+
 ---
 
 ### FIREBASE DATA COLLECTION :
