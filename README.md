@@ -27,7 +27,7 @@ donde puedes ejecutar una compra y obtener un ID desde FIREBASE para tu comprar 
 ---
 
 ### ¿Cómo Funciona? :
-![GIF] (Proyect-React.gif)
+
 ---
 ![ITEMS](src/Images/senditems.png)
 
