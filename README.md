@@ -27,8 +27,10 @@ donde puedes ejecutar una compra y obtener un ID desde FIREBASE para tu comprar 
 ---
 
 ### ¿Cómo Funciona? :
-![GIF] (Proyect-React.gif)
+<p><img alt='git' src='https://github.com/MariaTuritto/Proyect-React/blob/main/Proyect-React.gif' width='700' height='420'></p>
 ---
+
+### FIREBASE DATA COLLECTION :
 ![ITEMS](src/Images/senditems.png)
 
 ![ORDERS](src/Images/sendorder.png)
